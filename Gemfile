@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 2.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'rmagick', :github => 'rmagick-temp/rmagick'
+gem 'carrierwave', '~> 0.11.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
