@@ -3,9 +3,12 @@
 one:
   name: MyString
   species: MyString
-  description: MyText
+  desc: MyText
+  image: MyString
 
 two:
   name: MyString
   species: MyString
-  description: MyText
+  desc: MyText
+  image: MyString
+

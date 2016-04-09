@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<div class="image">
+  <%= image_tag @pet.image_url(:thumb) if @pet.image? %>
+</div>
+
 <p>
   <strong>Name:</strong>
   <%= @pet.name %>
@@ -12,7 +16,7 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @pet.description %>
+  <%= @pet.desc %>
 </p>
 
 <%= link_to 'Edit', edit_pet_path(@pet) %> |

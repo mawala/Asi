@@ -17,7 +17,7 @@ class PetsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create pet" do
     assert_difference('Pet.count') do
-      post pets_url, params: { pet: { description: @pet.description, name: @pet.name, species: @pet.species } }
+      post pets_url, params: { pet: { desc: @pet.desc, image: @pet.image, name: @pet.name, species: @pet.species } }
     end
 
     assert_redirected_to pet_path(Pet.last)
@@ -34,7 +34,7 @@ class PetsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update pet" do
-    patch pet_url(@pet), params: { pet: { description: @pet.description, name: @pet.name, species: @pet.species } }
+    patch pet_url(@pet), params: { pet: { desc: @pet.desc, image: @pet.image, name: @pet.name, species: @pet.species } }
     assert_redirected_to pet_path(@pet)
   end
 
