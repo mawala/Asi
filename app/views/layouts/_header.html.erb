@@ -1,11 +1,12 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",  '/' %></li>
-        <li><%= link_to "Pets", '/pets' %></li>
-      </ul>
-    </nav>
+    <ul class="nav navbar-nav">
+      <li><%= link_to "My Pets", '/', class:"navbar-brand" %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Home",  '/', class: "navbar-right" %></li>
+      <li><%= link_to "Pets", '/pets', class: "navbar-right" %></li>
+    </ul>
   </div>
-</header>
+</nav>
 

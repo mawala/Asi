@@ -7,7 +7,7 @@
 
   <div class="container">
     </br>
-    <%= link_to 'New', new_pet_path, class: "btn btn-outline btn-success glyphicon glyphicon-plus" %>
+    <%= link_to ' New', new_pet_path, class: "btn btn-outline btn-success glyphicon glyphicon-plus" %>
   </div>
 
   <table class="table table-bordered text-center table-striped">
@@ -29,7 +29,7 @@
           <td>
             <%= link_to 'Show', pet, class: "btn btn-outline btn-info btn-sm" %>
             <%= link_to 'Edit', edit_pet_path(pet), class: "btn btn-outline btn-info btn-sm" %>
-            <%= link_to 'Destroy', pet, method: :delete, data: { confirm: "Are you sure you want to delete #{pet.name}?" }, class: "btn btn-outline btn-danger btn-sm" %>
+            <%= link_to 'Delete', pet, method: :delete, data: { confirm: "Are you sure you want to delete #{pet.name}?" }, class: "btn btn-outline btn-danger btn-sm" %>
           </td>
         </tr>
       <% end %>
