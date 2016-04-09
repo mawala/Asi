@@ -1,0 +1,51 @@
+.digg-pagination {
+  background: #fff;
+  cursor: default;
+  margin: 1em 0 2em;
+
+  a,
+  span,
+  em {
+    display: block;
+    float: left;
+    margin-right: 1px;
+    padding: .2em .5em;
+    border-radius: 25px;
+  }
+
+  .disabled {
+    border: 1px solid #ddd;
+    color: #999;
+  }
+
+  .current {
+    background: #81daf5;
+    border: 1px solid #81daf5;
+    color: #2e6ab1;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  a {
+    border: 1px solid #81daf5;
+    color: #105cb6;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background: #81daf5;
+      border-color: #105cb6;
+      color: #105cb6;
+    }
+
+  }
+
+  &::after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+
+}
