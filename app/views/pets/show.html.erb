@@ -1,23 +1,36 @@
 <p id="notice"><%= notice %></p>
+<div class="jumbotron text-center">
+  
+  <h2>Pet <%= @pet.name %></h2>
 
-<div class="image">
-  <%= image_tag @pet.image_url(:thumb) if @pet.image? %>
+  <div class="image">
+    <%= image_tag @pet.image_url(:thumb) if @pet.image? %>
+  </div>
+
+  <table class="table table-bordered table-striped">
+    <tr><td></td></tr>
+    <tr>
+      <td>
+        <small>Species</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= @pet.species %>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <small>Description</small>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= @pet.desc %>
+      </td>
+    </tr>
+  </table>
+  <%= link_to ' Edit', edit_pet_path(@pet), class: "btn btn-info btn-outline glyphicon glyphicon-pencil" %>
+  <%= link_to ' Back', pets_path, class: "btn btn-default btn-outline glyphicon glyphicon-arrow-left" %>
 </div>
-
-<p>
-  <strong>Name:</strong>
-  <%= @pet.name %>
-</p>
-
-<p>
-  <strong>Species:</strong>
-  <%= @pet.species %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @pet.desc %>
-</p>
-
-<%= link_to 'Edit', edit_pet_path(@pet) %> |
-<%= link_to 'Back', pets_path %>
