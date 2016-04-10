@@ -32,8 +32,12 @@
           <td><%= pet.desc %></td>
           <td>
             <%= link_to 'Show', pet, class: "btn btn-outline btn-info btn-sm" %>
+            <% if logged_in? %>
             <%= link_to 'Edit', edit_pet_path(pet), class: "btn btn-outline btn-info btn-sm" %>
-            <%= link_to 'Delete', pet, method: :delete, data: { confirm: "Are you sure you want to delete #{pet.name}?" }, class: "btn btn-outline btn-danger btn-sm" %>
+            <% if current_user.admin? %>
+              <%= link_to 'Delete', pet, method: :delete, data: { confirm: "Are you sure you want to delete #{pet.name}?" }, class: "btn btn-outline btn-danger btn-sm" %>
+            <% end %>
+            <% end %>
           </td>
         </tr>
       <% end %>
