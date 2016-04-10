@@ -1,24 +1,17 @@
-## README
+### (Nazwa Zespołu) – Marta Walczak
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Zaliczenie:
+ - [x] [My Pets](/)
+ - [x] [https://pets22.herokuapp.com](https://pets22.herokuapp.com/)
+1. Egzamin:
+ - [ ] [nazwa aplikacji](egzamin)
+ - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
 
-Things you may want to cover:
+Wersja Ruby|Wersja Rails|Baza danych|
+|---|---|---|
+|2.3.0p0|5.0.0.beta3|PostgreSQL|
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Aplikacja służy przechowywaniu danych o zwierzętach użytkowników.
+Każdy zalogowany użytkownik może dodawać oraz edytować zapisane dane.
+Usuwać je mogą jedynie admini.
+Natomiast przeglądać dane mogą wszyscy, nawet niezalogowani.
