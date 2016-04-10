@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem 'puma'
 
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bcrypt', '~>3.1.11'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
