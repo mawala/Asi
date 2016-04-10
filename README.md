@@ -1,7 +1,7 @@
 ### (Nazwa Zespołu) – Marta Walczak
 
 1. Zaliczenie:
- - [x] [My Pets](/)
+ - [x] [My Pets](https://github.com/mawala/Asi)
  - [x] [https://pets22.herokuapp.com](https://pets22.herokuapp.com/)
 1. Egzamin:
  - [ ] [nazwa aplikacji](egzamin)
